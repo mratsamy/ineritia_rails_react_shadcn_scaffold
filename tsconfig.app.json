@@ -27,5 +27,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
   },
-  "include": ["app/javascript"]
+  "include": ["app/javascript", "app/frontend"]
 }
