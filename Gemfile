@@ -9,11 +9,11 @@ gem "sqlite3", ">= 2.1"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
-gem "importmap-rails"
+# gem "importmap-rails"
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
-gem "turbo-rails"
+# gem "turbo-rails"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
-gem "stimulus-rails"
+# gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
@@ -49,14 +49,16 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
-
-  # Automatically annotate models
-  gem "annotaterb"
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  # Automatically annotate models
+  gem "annotaterb"
+  # Automatically generates types from our serializer classes
+  gem "types_from_serializers"
+  gem "js-routes"
 end
 
 group :test do
@@ -68,3 +70,8 @@ end
 gem "inertia_rails", "~> 3.9"
 
 gem "vite_rails", "~> 3.0"
+
+# Fast JSON Parser
+gem "oj", "~> 3.16"
+# Fast JSON Serializer
+gem "oj_serializers"

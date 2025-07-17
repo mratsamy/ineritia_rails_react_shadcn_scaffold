@@ -21,6 +21,10 @@ module Authentication
       @current_user ||= resume_session
     end
 
+    def current_user?
+      current_user.present?
+    end
+
     def require_authentication
       resume_session || request_authentication
     end
@@ -50,6 +54,7 @@ module Authentication
     end
 
     def terminate_session
+      @current_user = nil
       Current.session.destroy
       cookies.delete(:session_id)
     end

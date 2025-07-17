@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   # Allows for sharing the props across all pages
   inertia_share do
     {
-      current_user: current_user
+      current_user: current_user? ? UserSerializer.render(current_user) : {}
     }
   end
 end
