@@ -75,3 +75,6 @@ gem "vite_rails", "~> 3.0"
 gem "oj", "~> 3.16"
 # Fast JSON Serializer
 gem "oj_serializers"
+
+# Pagy pagination
+gem "pagy", "~> 9.3"

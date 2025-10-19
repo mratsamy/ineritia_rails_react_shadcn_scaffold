@@ -1,7 +1,7 @@
 # README
 This is a basic scaffold for a rails 8 application running InertiaJs on Rails, React, and ShadCN on the frontend. [Inertia Rails guide](https://inertia-rails.dev/guide)
 
-Uses AnnotateRb to annotate model files after migrations are performed.
+Uses AnnotateRb to annotate model files after migrations are performed. [Pagy](https://ddnexus.github.io/pagy/) is also included in the gemfile.
 
 Rails backend uses Oj to enhance parsing JSON. Oj Serializers to serialize data for JS requests. JsRoutes generates rails-like helper paths that can be imported and used and preside in `app/frontend/lib/routes.js`. Types-from-serializer gem auto generates types and exports them to `app/frontend/lib/types` directory. Vite ruby is setup to alias `app/frontend/*` => `@/*`, 
 ``` 
