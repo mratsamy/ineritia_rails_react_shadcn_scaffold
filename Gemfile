@@ -77,4 +77,4 @@ gem "oj", "~> 3.16"
 gem "oj_serializers"
 
 # Pagy pagination
-gem "pagy", "~> 9.3"
+gem "pagy", "~> 9.4"
