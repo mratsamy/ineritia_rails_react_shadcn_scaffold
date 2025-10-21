@@ -141,7 +141,7 @@ GEM
       railties (>= 5)
       sorbet-runtime
     json (2.12.2)
-    kamal (2.7.0)
+    kamal (2.8.1)
       activesupport (>= 7.0)
       base64 (~> 0.2)
       bcrypt_pbkdf (~> 1.0)
@@ -206,7 +206,7 @@ GEM
       ostruct (>= 0.2)
     oj_serializers (2.0.3)
       oj (>= 3.14.0)
-    ostruct (0.6.2)
+    ostruct (0.6.3)
     pagy (9.3.5)
     parallel (1.27.0)
     parser (3.3.8.0)
