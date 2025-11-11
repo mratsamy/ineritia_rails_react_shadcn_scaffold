@@ -210,7 +210,9 @@ GEM
     oj_serializers (2.0.3)
       oj (>= 3.14.0)
     ostruct (0.6.3)
-    pagy (9.4.0)
+    pagy (43.0.1)
+      json
+      yaml
     parallel (1.27.0)
     parser (3.3.8.0)
       ast (~> 2.4.1)
@@ -392,6 +394,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
+    yaml (0.4.0)
     zeitwerk (2.7.3)
 
 PLATFORMS
@@ -418,7 +421,7 @@ DEPENDENCIES
   kamal
   oj (~> 3.16)
   oj_serializers
-  pagy (~> 9.4)
+  pagy (~> 43.0)
   propshaft
   puma (>= 5.0)
   rails (~> 8.1.1)
